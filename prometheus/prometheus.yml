@@ -1,13 +1,13 @@
 global:
   scrape_interval:     15s
-  evaluation_interval: 15s
-  external_labels:
-      monitor: '<monitor-name>'
+  # evaluation_interval: 15s
+  # external_labels:
+  #     monitor: '<monitor-name>'
 
 rule_files:
-  - 'recording.rules.yml'
+  # - 'recording.rules.yml'
 
 scrape_configs:
-  - job_name: <job-name>
+  - job_name: "prometheus"
     static_configs:
-      - targets: ['<target>']
+      - targets: ['localhost:9090']
