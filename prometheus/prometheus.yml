@@ -13,5 +13,6 @@ scrape_configs:
       - targets: ['localhost:9090']
   - job_name: django
     scrape_interval: 30s
+    metrics_path: /prometheus/metrics
     static_configs:
       - targets: ['partak-backend:10000']
