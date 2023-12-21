@@ -14,6 +14,7 @@ scrape_configs:
   - job_name: django
     scheme: https
     scrape_interval: 2m
+    scrape_timeout: 1m
     metrics_path: /prometheus/metrics
     static_configs:
       - targets: ['partak-backend.onrender.com:9090']
