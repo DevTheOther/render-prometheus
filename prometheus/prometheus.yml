@@ -17,4 +17,4 @@ scrape_configs:
     scrape_timeout: 1m
     metrics_path: /prometheus/metrics
     static_configs:
-      - targets: ['partak-backend.onrender.com:9090']
+      - targets: ['partak-backend.onrender.com']
